@@ -1,3 +1,19 @@
 spring:
   application:
     name: study-chatgpt
+  ai:
+    openai:
+      api-key: sk-kQF8EtCtJ3oLUHGC320b91B2B9E64bA5Af2b678aD7B81dEf
+      # default
+      base-url: https://api.openai.com/
+      chat:
+        # Specifying an API Configuration (Overriding the Global Configuration)
+        api-key: sk-kQF8EtCtJ3oLUHGC320b91B2B9E64bA5Af2b678aD7B81dEf
+        base-url: https://api.openai.com/
+        options:
+          model: gpt-3.5-turbo
+          temperature: 0.7
+#      embedding:
+#        options:
+#          model: text-embedding-ada-002
+
