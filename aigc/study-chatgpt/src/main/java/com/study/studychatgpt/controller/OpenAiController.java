@@ -1,5 +1,6 @@
 package com.study.studychatgpt.controller;
 
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.ai.chat.ChatResponse;
 import org.springframework.ai.chat.messages.UserMessage;
@@ -20,7 +21,7 @@ import reactor.core.publisher.Flux;
 @RestController
 public class OpenAiController {
 
-    @Autowired
+    @Resource(name = "myOpenAiChatClient")
     private OpenAiChatClient chatClient;
 
     /**
